@@ -42,7 +42,7 @@ class CandidatController extends Controller
 
 
         // SendEmailJob::dispatch();
-        Mail::to($request->email)->send(new CandidatResponse($request->response, ($request->response == 'accept') ? 'ija ghodwa' : 'matjich'));
+        Mail::to($request->email)->send(new CandidatResponse($request->response, ($request->response == 'accept') ? 'candidacy_accepted' : 'candidacy_rejected'));
 
         return ApiResponse::success();
     }
