@@ -155,17 +155,17 @@ To run the application, all you need to do is run the Docker Compose command in 
 ```
 
 ```
- sudo docker exec [php_container_ID] chown -R www-data:www-data /var/www/html/storage
+ sudo docker exec <php_container_ID> chown -R www-data:www-data /var/www/html/storage
 ```
 
 ```
- sudo docker exec [php_container_ID] cp .env.example .env
+ sudo docker exec <php_container_ID> cp .env.example .env
 ```
 
 ```
- sudo docker exec [php_container_ID] php artisan key:generate
+ sudo docker exec <php_container_ID> php artisan key:generate
 ```
 
 ```
- sudo docker exec [php_container_ID] php artisan migrate
+ sudo docker exec <php_container_ID> php artisan migrate
 ```
