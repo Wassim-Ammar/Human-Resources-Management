@@ -126,7 +126,7 @@ sudo apt install -y docker.io
  docker --version
 ```
 
-## Add mysql volume file
+## Creatin volume file for mysql container
 
 You need to create a volume file for the MySQL container. To do this, run the following command:
 
