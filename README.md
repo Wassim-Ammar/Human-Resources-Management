@@ -134,8 +134,6 @@ You need to create a volume file for the MySQL container. To do this, run the fo
  mkdir mysql
 ```
 
-If you haven't already installed Docker, follow these steps to set it up on your system:
-
 # Running the application
 
 1. To run the application, all you need to do is run the Docker Compose command in the cloned repository folder on your host.
