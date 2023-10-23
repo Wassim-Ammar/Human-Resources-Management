@@ -146,7 +146,7 @@ You need to create a volume file for the MySQL container. To do this, run the fo
  mkdir mysql
 ```
 
-# Running the application
+# Run the application
 
 To run the application, all you need to do is run the Docker Compose command in the cloned repository folder on your host.
 
