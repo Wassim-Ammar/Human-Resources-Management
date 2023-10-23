@@ -114,10 +114,14 @@ sudo apt update
 sudo apt install -y docker.io
 ```
 
-4. Insatll docker
+4. Start the Docker service and enable it to run on system startup
 
 ```
- sudo apt install -y docker.io
+ sudo systemctl start docker
+```
+
+```
+ sudo systemctl enable docker
 ```
 
 5. Verify the installation by running the following command
@@ -126,9 +130,17 @@ sudo apt install -y docker.io
  docker --version
 ```
 
-## Creating volume file for mysql container
+## Clone the repository
 
-You need to create a volume file for the MySQL container. To do this, run the following command:
+To do this, run the following command:
+
+```
+git clone git@github.com:Wassim-Ammar/Human-Resources-Management.git
+```
+
+## Create volume file for mysql container
+
+You need to create a volume file for the MySQL container. To do this, run the following command under the application folder:
 
 ```
  mkdir mysql
@@ -136,7 +148,7 @@ You need to create a volume file for the MySQL container. To do this, run the fo
 
 # Running the application
 
-1. To run the application, all you need to do is run the Docker Compose command in the cloned repository folder on your host.
+To run the application, all you need to do is run the Docker Compose command in the cloned repository folder on your host.
 
 ```
  docker-compose up -d
