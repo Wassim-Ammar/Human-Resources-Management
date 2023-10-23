@@ -32,7 +32,7 @@ class CandidatController extends Controller
 
     function getCv(): JsonResponse
     {
-        return Storage::download('/uploads/file.pdf', 'filename.pdf');
+        Storage::download('/uploads/file.pdf', 'filename.pdf');
 
         return ApiResponse::success();
     }
